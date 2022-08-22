@@ -9,8 +9,8 @@ namespace g181210044_g191210044
         public SporContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder<SporContext>();
-            var connectionString = "Server=(localdb)\\MSSQLLocalDB; Database=SporDb; Trusted_Connection=True;";
-            builder.UseSqlServer(connectionString);
+            var connectionString = "Server= LAPTOP-IPMG3S6I\\MSSQLSERVER02; Database=SporDb; Trusted_Connection=True;";
+            builder.UseSqlite(connectionString);
             return new SporContext(builder.Options);
         }
     }

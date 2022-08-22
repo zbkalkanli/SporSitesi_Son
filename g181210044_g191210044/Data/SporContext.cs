@@ -16,7 +16,7 @@ namespace g181210044_g191210044.Data
         public DbSet<Yorum> Yorum { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = sporSitesi.db");
+            optionsBuilder.UseSqlite("Data Source = sporSitesi.db");
         }
     }
 }

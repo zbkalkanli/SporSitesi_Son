@@ -1,6 +1,6 @@
 using g181210044_g191210044;
 
-    var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 builder.Logging.AddJsonConsole();
 
 // Add services to the container.
