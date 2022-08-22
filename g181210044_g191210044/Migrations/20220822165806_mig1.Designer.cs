@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using g181210044_g191210044.Data;
 
@@ -11,9 +12,10 @@ using g181210044_g191210044.Data;
 namespace g181210044_g191210044.Migrations
 {
     [DbContext(typeof(SporContext))]
-    partial class SporContextModelSnapshot : ModelSnapshot
+    [Migration("20220822165806_mig1")]
+    partial class mig1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
