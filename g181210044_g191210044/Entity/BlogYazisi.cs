@@ -12,7 +12,8 @@ namespace g181210044_g191210044.Entity
         public string Icerik { get; set; }
         [Required]
         [MinLength(1500)]
-        [MaxLength(7500)]
+        [MaxLength(10000)]
+        public string IcerikBirKismi { get; set; }
         public string Baslik { get; set; }
         [Required]
         [MaxLength(500)]
@@ -20,6 +21,7 @@ namespace g181210044_g191210044.Entity
         //public int YazarId { get; set; }
         //public virtual BlogYazari BlogYazari { get; set; }
         public virtual List<Yorum> Yorumlar { get; set; }
+
 
     }
 }

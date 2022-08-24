@@ -1,4 +1,5 @@
-﻿using g181210044_g191210044.Entity;
+﻿using g181210044_g191210044.Data;
+using g181210044_g191210044.Entity;
 using g181210044_g191210044.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -20,11 +21,12 @@ namespace g181210044_g191210044.Controllers
         }
         public IActionResult Blog()
         {
-            var blogYazilari = new List<BlogYazisi>()
+            var model = new BlogPageViewModel
             {
-            
+                BlogYazilari = BlogYazisiRepository.BlogYazisis
             };
-            return View(blogYazilari);
+
+            return View(model);
         }
         public IActionResult Market()
         {

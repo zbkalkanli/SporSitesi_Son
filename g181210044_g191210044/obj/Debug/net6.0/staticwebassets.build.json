@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DnvImgJ7lKzaAZPfY6unVHeeMWuhQD+qYLkL3iYNbvs=",
+  "Hash": "dMZDTg/shIxeYyek6Vjhk5S/W+nB5Q+XwskWA+kwJ8c=",
   "Source": "g181210044_g191210044",
   "BasePath": "_content/g181210044_g191210044",
   "Mode": "Default",
@@ -153,6 +153,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\fonts\\FontAwesome.otf",
+      "SourceId": "g181210044_g191210044",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\",
+      "BasePath": "_content/g181210044_g191210044",
+      "RelativePath": "fonts/FontAwesome.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\FontAwesome.otf"
+    },
+    {
       "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "SourceId": "g181210044_g191210044",
       "SourceType": "Discovered",
@@ -236,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
-    },
-    {
-      "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\fonts\\FontAwesome.otf",
-      "SourceId": "g181210044_g191210044",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\",
-      "BasePath": "_content/g181210044_g191210044",
-      "RelativePath": "fonts/FontAwesome.otf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\FontAwesome.otf"
     },
     {
       "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\images\\ab1.jpg",
@@ -612,23 +612,6 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\js\\jquery-3.3.1.min.js",
-      "SourceId": "g181210044_g191210044",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\",
-      "BasePath": "_content/g181210044_g191210044",
-      "RelativePath": "js/jquery-3.3.1.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\jquery-3.3.1.min.js"
-    },
-    {
       "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\js\\jquery.countup.js",
       "SourceId": "g181210044_g191210044",
       "SourceType": "Discovered",
@@ -678,6 +661,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "SourceId": "g181210044_g191210044",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\",
+      "BasePath": "_content/g181210044_g191210044",
+      "RelativePath": "js/jquery-3.3.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.3.1.min.js"
     },
     {
       "Identity": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\wwwroot\\js\\owl.carousel.js",
