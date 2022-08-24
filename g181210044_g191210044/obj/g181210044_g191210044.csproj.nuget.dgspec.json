@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj": {}
+    "C:\\Users\\zeybe\\Desktop\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj": {
+    "C:\\Users\\zeybe\\Desktop\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj",
+        "projectUniqueName": "C:\\Users\\zeybe\\Desktop\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj",
         "projectName": "g181210044_g191210044",
-        "projectPath": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj",
+        "projectPath": "C:\\Users\\zeybe\\Desktop\\g181210044_g191210044\\g181210044_g191210044\\g181210044_g191210044.csproj",
         "packagesPath": "C:\\Users\\zeybe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zeybe\\Desktop\\WEB_ODEV_SON\\g181210044_g191210044\\g181210044_g191210044\\obj\\",
+        "outputPath": "C:\\Users\\zeybe\\Desktop\\g181210044_g191210044\\g181210044_g191210044\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
