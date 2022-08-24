@@ -16,9 +16,9 @@ namespace g181210044_g191210044.Entity
         public string Baslik { get; set; }
         [Required]
         [MaxLength(500)]
-        public int YazarId { get; set; }
-        [Required]
-        public virtual BlogYazari BlogYazari { get; set; }
+
+        //public int YazarId { get; set; }
+        //public virtual BlogYazari BlogYazari { get; set; }
         public virtual List<Yorum> Yorumlar { get; set; }
 
     }

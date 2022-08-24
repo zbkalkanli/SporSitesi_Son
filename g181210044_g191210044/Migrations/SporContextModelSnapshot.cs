@@ -25,45 +25,24 @@ namespace g181210044_g191210044.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Admin");
+                    b.ToTable("Adminler");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1
+                        },
+                        new
+                        {
+                            Id = 2
+                        },
+                        new
+                        {
+                            Id = 3
+                        });
                 });
 
-            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazisi", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Baslik")
-                        .IsRequired()
-                        .HasMaxLength(7500)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("BegeniSayisi")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("BlogYazariId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Icerik")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("YayinTarihi")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("YazarId")
-                        .HasMaxLength(500)
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BlogYazariId");
-
-                    b.ToTable("BlogYazisi");
-                });
-
-            modelBuilder.Entity("g181210044_g191210044.Entity.Uye", b =>
+            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazari", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,10 +51,6 @@ namespace g181210044_g191210044.Migrations
                     b.Property<string>("Ad")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("KatilimTarihi")
@@ -97,9 +72,129 @@ namespace g181210044_g191210044.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Uye");
+                    b.ToTable("BlogYazarlari");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Uye");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ad = "Zeynep Betül",
+                            KatilimTarihi = new DateTime(2019, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "sporHocasi@gmail.com",
+                            Sifre = "11123",
+                            Soyad = "Kalkanlı"
+                        });
+                });
+
+            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazisi", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Baslik")
+                        .IsRequired()
+                        .HasMaxLength(7500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("BegeniSayisi")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("BlogYazariId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Icerik")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("YayinTarihi")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogYazariId");
+
+                    b.ToTable("BlogYazilari");
+                });
+
+            modelBuilder.Entity("g181210044_g191210044.Entity.Uye", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Ad")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("KatilimTarihi")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MailAdresi")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Sifre")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Soyad")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Uyeler");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ad = "Esra",
+                            KatilimTarihi = new DateTime(2020, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "esraYilmaz@gmail.com",
+                            Sifre = "123resa",
+                            Soyad = "Yılmaz"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Ad = "Ebrar",
+                            KatilimTarihi = new DateTime(2020, 4, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "ebrarYildiz@gmail.com",
+                            Sifre = "39421asrvw",
+                            Soyad = "Yıldız"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Ad = "Elif",
+                            KatilimTarihi = new DateTime(2019, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "elifSevinnn@gmail.com",
+                            Sifre = "245ebl32",
+                            Soyad = "Sevimli"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Ad = "Büşra",
+                            KatilimTarihi = new DateTime(2018, 10, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "busra123@gmail.com",
+                            Sifre = "5g245g2",
+                            Soyad = "Tekiner"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Ad = "Ali",
+                            KatilimTarihi = new DateTime(2020, 3, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MailAdresi = "aliGulec@gmail.com",
+                            Sifre = "afegt0459a",
+                            Soyad = "Güleç"
+                        });
                 });
 
             modelBuilder.Entity("g181210044_g191210044.Entity.Yorum", b =>
@@ -108,10 +203,10 @@ namespace g181210044_g191210044.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("BlogId")
+                    b.Property<int?>("BlogYazariId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BlogYazisiId")
+                    b.Property<int?>("BlogYazisiId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Icerik")
@@ -124,38 +219,57 @@ namespace g181210044_g191210044.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BlogYazariId");
+
                     b.HasIndex("BlogYazisiId");
 
                     b.HasIndex("UyeId");
 
-                    b.ToTable("Yorum");
-                });
+                    b.ToTable("Yorumlar");
 
-            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazari", b =>
-                {
-                    b.HasBaseType("g181210044_g191210044.Entity.Uye");
-
-                    b.HasDiscriminator().HasValue("BlogYazari");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Icerik = "Kıymetli bir yazı olmuş.",
+                            UyeId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Icerik = "Deneyeceğim.",
+                            UyeId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Icerik = "Böyle yazılar yazmaya devam edin lütfen.",
+                            UyeId = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Icerik = "Hayatıma geçirmek istiyorum.",
+                            UyeId = 3
+                        });
                 });
 
             modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazisi", b =>
                 {
-                    b.HasOne("g181210044_g191210044.Entity.BlogYazari", "BlogYazari")
+                    b.HasOne("g181210044_g191210044.Entity.BlogYazari", null)
                         .WithMany("Yazilari")
-                        .HasForeignKey("BlogYazariId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("BlogYazari");
+                        .HasForeignKey("BlogYazariId");
                 });
 
             modelBuilder.Entity("g181210044_g191210044.Entity.Yorum", b =>
                 {
-                    b.HasOne("g181210044_g191210044.Entity.BlogYazisi", "BlogYazisi")
+                    b.HasOne("g181210044_g191210044.Entity.BlogYazari", null)
+                        .WithMany("YaptigiYorumlar")
+                        .HasForeignKey("BlogYazariId");
+
+                    b.HasOne("g181210044_g191210044.Entity.BlogYazisi", null)
                         .WithMany("Yorumlar")
-                        .HasForeignKey("BlogYazisiId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BlogYazisiId");
 
                     b.HasOne("g181210044_g191210044.Entity.Uye", "Uye")
                         .WithMany("YaptigiYorumlar")
@@ -163,9 +277,14 @@ namespace g181210044_g191210044.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("BlogYazisi");
-
                     b.Navigation("Uye");
+                });
+
+            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazari", b =>
+                {
+                    b.Navigation("YaptigiYorumlar");
+
+                    b.Navigation("Yazilari");
                 });
 
             modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazisi", b =>
@@ -176,11 +295,6 @@ namespace g181210044_g191210044.Migrations
             modelBuilder.Entity("g181210044_g191210044.Entity.Uye", b =>
                 {
                     b.Navigation("YaptigiYorumlar");
-                });
-
-            modelBuilder.Entity("g181210044_g191210044.Entity.BlogYazari", b =>
-                {
-                    b.Navigation("Yazilari");
                 });
 #pragma warning restore 612, 618
         }

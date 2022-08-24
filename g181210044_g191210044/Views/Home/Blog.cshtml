@@ -1,12 +1,9 @@
-﻿@model List<g181210044_g191210044.Entity.BlogYazisi>
-
+﻿
 @{
     ViewBag.Title = "Blog";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@{
-    var l = Model.ToArray();
-}
+
 <!-- about breadcrumb -->
 <section class="w3l-about-breadcrumb position-relative text-center">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
@@ -33,7 +30,7 @@
                     <div class="title-content text-left mb-2">
                         <h6 class="sub-title"></h6>
                         <h3 class="hny-title">
-                            @l[0].Baslik
+                            @*BURASI*@
                         </h3>
                     </div>
                     <p class="mt-3">
@@ -42,7 +39,7 @@
                         adipisicing
                         elit.fugiat consequatur voluptatem nihil ad.
                         </p>
-                    @Html.ActionLink("Read More", "Yayin", "Blog")
+                        Read More
                 </div>
                 <div class="col-lg-6 mt-5 pl-lg-4">
                     <img src="~/images/ab2.jpg" alt="" class="img-fluid">
@@ -65,7 +62,7 @@
                 </div>
                 <div class="content-left col-lg-6 pl-lg-5">
                     <h3 class="hny-title">
-                        @l[2].Baslik
+                        @*BURASI*@
                     </h3>
                     <p class="mt-3">
                         Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga,
